@@ -49,7 +49,7 @@ function TaskForm({ onAddTask }: TaskFormProps) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button type="submit">Add Task</button>
+      <button type="submit">Add Mission</button>
     </form>
   );
 }

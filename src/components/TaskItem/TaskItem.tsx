@@ -22,10 +22,8 @@ function TaskItem({ task, onReload }: TaskItemProps) {
       <h3>{task.name}</h3>
       <p>{task.description}</p>
       <p>Status: {task.status}</p>
-      <button onClick={handleStatusChange} disabled={task.status === 'Completed'}>
-        Update Status
-      </button>
-      <button onClick={handleDelete}>Delete Task</button>
+      <button onClick={handleStatusChange} disabled={task.status === 'Completed'}>Progress</button>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   );
 }

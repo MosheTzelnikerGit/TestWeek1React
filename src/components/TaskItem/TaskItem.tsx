@@ -8,12 +8,12 @@ interface TaskItemProps {
 
 function TaskItem({ task, onReload }: TaskItemProps) {
   const handleStatusChange = async () => {
-    await updateTaskStatus(task.id!);
+    await updateTaskStatus(task._id!);
     onReload();
   };
 
   const handleDelete = async () => {
-    await deleteTask(task.id!);
+    await deleteTask(task._id!);
     onReload();
   };
 

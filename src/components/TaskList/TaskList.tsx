@@ -10,7 +10,7 @@ function TaskList({ tasks, onReload }: TaskListProps) {
   return (
     <div className="task-list">
       {tasks.map(task => (
-        <TaskItem key={task.id} task={task} onReload={onReload} />
+        <TaskItem key={task._id} task={task} onReload={onReload} />
       ))}
     </div>
   );
